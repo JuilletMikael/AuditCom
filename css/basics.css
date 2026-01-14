@@ -1,0 +1,31 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: "Diatype", system-ui, sans-serif;
+    font-size: var(--fs-base);
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.big-text {
+    font-size: clamp(16px, 8vw, 96px);
+    font-weight: bold;
+}
+
+section {
+    margin: var(--whitespace);
+}
+
+@media screen and (width >=600px) {
+    html {
+        font-size: 18px;
+    }
+}

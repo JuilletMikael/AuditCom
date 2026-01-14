@@ -1,0 +1,61 @@
+section#hero {
+    margin: 0;
+    position: relative;
+    height: 100vh;
+
+    .hero-content {
+        padding: var(--whitespace);
+        position: relative;
+        z-index: 3;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    #soccer-video {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(116, 202, 35, 0.2);
+        z-index: 2;
+    }
+}
+
+@media screen and (width >=600px) {
+    section#hero {
+        .hero-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "state state ."
+            "bottom-left . bottom-right"
+            ;
+
+            #state {
+                grid-area: state;
+            }
+
+            #made-by{
+                grid-area: bottom-left;
+                align-self: flex-end;
+            }
+
+            #year {
+                grid-area: bottom-right;
+                text-align: right;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+ 
