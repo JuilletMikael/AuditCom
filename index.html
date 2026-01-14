@@ -12,12 +12,17 @@
 
 <body>
 
-    <section class="hero">
-        <h1 class="big-texte capitalize" id="state">État du football Romand</h1>
+    <section id="hero">
+        <video autoplay muted loop id="soccer-video">
+            <source src="./assets/videos/field_soccer.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="big-text uppercase" id="state">État du football Romand</h1>
 
-        <p id="made-by">Par Chibani Baya et Juillet Mikael</p>
+            <p id="made-by">Par Chibani Baya et Juillet Mikael</p>
 
-        <p id="year">2025</p>
+            <p class="big-text" id="year">2026</p>
+        </div>
     </section>
 
     <section class="introduction">
@@ -28,6 +33,8 @@
             dolore soluta itaque tempora? Provident consectetur, itaque quaerat nam corporis, dolorem magnam commodi
             dicta explicabo tempore porro.
         </p>
+
+        <a href="#download">Télécharger le rapport</a>
     </section>
 
     <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
@@ -38,7 +45,9 @@
         <h2>Rapports</h2>
     </section>
 
-    <section class="form">
+    <section class="form" id="download">
+        <h2>Télécharger le rapport</h2>
+
         <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
         <div id="messageContainer"></div>
 
