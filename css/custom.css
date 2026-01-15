@@ -87,7 +87,7 @@ section#club {
         position: relative;
         display: flex;
         gap: 0 2rem;
-        margin: var(--whitespace) 0 ;
+        margin: var(--whitespace) 0;
     }
 
     .carousel::before,
@@ -134,52 +134,39 @@ section#club {
     }
 }
 
-section#key-numbers > div {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
+section#key-numbers {
+    div {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
 
-section#key-numbers > div > article {
-    width: 300px;
-}
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
 
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+            margin: 0;
+            margin-top: 0.5rem;
+        }
 
-section#key-numbers article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+        p {
+            font-size: 1rem;
+            line-height: 1.4;
+            max-width: 220px;
+            text-align: center;
 
-section#key-numbers article h3 {
-    margin-top: 0.5rem;
-}
-
-
-section#key-numbers article p {
-    margin-bottom: 1.5rem;
-}
-
-
-
-section#key-numbers article h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
-    margin: 0;
-    margin-top: 0.5rem;
-}
-
-section#key-numbers article p {
-    font-size: 1rem;
-    line-height: 1.4;
-    max-width: 220px;
-    text-align: center;
-
-    margin-top: auto;
-    margin-bottom: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
 }
 
 @media screen and (width >=600px) {
