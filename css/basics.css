@@ -7,13 +7,9 @@ body {
     font-size: var(--fs-base);
 }
 
-h2, .button {
+h2,
+.button {
     text-transform: uppercase;
-    padding: 0.4rem 0.7rem;
-    background-color: var(--black);
-    color: var(--white);
-    width: fit-content;
-    border-radius: var(--corner-radius);
     margin-bottom: 1rem;
 }
 
@@ -34,30 +30,40 @@ section {
     margin: var(--whitespace);
 }
 
+section#introduction, section#key-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    min-height: 55vh;
+    
+    h2 {
+        align-self: baseline;
+    }
+}
+
 @media screen and (width >=600px) {
     html {
         font-size: 18px;
     }
 }
 
-.ligne {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-    > * {
-         flex: 1 0 300px;
-    }
-}
-
 .button {
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    background-color: var(--black);
+    color: var(--white);
+    width: fit-content;
+    border-radius: var(--corner-radius);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
 }
+
 .button:hover {
-  background-color: #7a7a7a;
+    background-color: #7a7a7a;
 }
 
 .centred {
-    margin: auto;
+    margin: 0 auto;
 }
