@@ -71,8 +71,8 @@
     <!-- <p data-bind-global="count"></p> -->
 
     <section id="club">
-         <h2>Clubs analysés</h2>
-         <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
+        <h2>Clubs analysés</h2>
+        <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
         <div class="carousel">
             <div id="teamList" class="group">
             </div>
@@ -81,7 +81,7 @@
     </section>
 
     <section class="form" id="download">
-        <h2>Télécharger le rapport</h2>
+        <h2>Accédez au rapport complet</h2>
 
         <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
         <div id="messageContainer"></div>
@@ -91,9 +91,11 @@
             <input type="text" name="lastName" placeholder="Nom">
             <input type="text" name="firstName" placeholder="Prénom">
             <input type="email" name="email" placeholder="Email">
-            <input type="checkbox" name="newsletterAgreement" id="consent">
-            <label for="consent">J'accepte de recevoir la newsletter</label>
-            <button type="submit">Télécharger</button>
+            <div class="centred">
+                <input type="checkbox" name="newsletterAgreement" id="consent">
+                <label for="consent">J’accepte de recevoir des informations liées à ce projet (newsletter)</label>
+            </div>
+            <button type="submit" class="centred button">Télécharger</button>
         </form>
     </section>
 

@@ -3,6 +3,8 @@
     --black : #000000;
     --white : #ffffff;
     --corner-radius : 3px;
+    --error-color : #dc3545;
+    --success-color : #198754;
 }
 
 @media screen and (width >=600px) {

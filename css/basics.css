@@ -3,14 +3,14 @@ html {
 }
 
 body {
-     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: var(--fs-base);
 }
 
 h2,
 .button {
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 img {
@@ -30,7 +30,8 @@ section {
     margin: var(--whitespace);
 }
 
-section#introduction, section#key-numbers {
+section#introduction,
+section#key-numbers {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -38,7 +39,7 @@ section#introduction, section#key-numbers {
     text-align: center;
     gap: 1rem;
     min-height: 55vh;
-    
+
     h2 {
         align-self: baseline;
     }
@@ -66,4 +67,26 @@ section#introduction, section#key-numbers {
 
 .centred {
     margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--corner-radius);
+}
+
+#messageContainer aside {
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--corner-radius);
+    border: 1px solid var(--black);
+    width: fit-content;
+    margin: 1rem;
+}
+
+.error {
+    background-color: var(--error-color);
+}
+
+.success {
+    background-color: var(--success-color);
 }
