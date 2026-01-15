@@ -71,7 +71,7 @@ section#key-numbers {
 
 @keyframes spin {
     from {
-        transform: translateX(0); 
+        transform: translateX(0);
     }
 
     to {
@@ -87,13 +87,13 @@ section#club {
         position: relative;
         display: flex;
         gap: 0 2rem;
-        margin: var(--whitespace) 0 ;
+        margin: var(--whitespace) 0;
     }
 
     .carousel::before,
     .carousel::after {
         content: "";
-        top: 0;   
+        top: 0;
         position: absolute;
         width: 50px;
         height: 100%;
@@ -130,6 +130,41 @@ section#club {
                 object-fit: contain;
                 display: block;
             }
+        }
+    }
+}
+
+section#key-numbers {
+    div {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+            margin: 0;
+            margin-top: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.4;
+            max-width: 220px;
+            text-align: center;
+
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
 }
