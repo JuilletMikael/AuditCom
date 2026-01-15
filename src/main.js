@@ -1,3 +1,4 @@
+import { duplicateTeams } from "./duplicateTeams.js";
 import { loadTemplate } from "./loadTemplate.js";
 import { fillTemplate, fillGlobals } from "./templating.js";
 
@@ -223,6 +224,7 @@ async function loadPDFList() {
         })
       );
     });
+    duplicateTeams();
   } catch (error) {
     console.error("Error loading PDF list:", error);
     showMessage("Erreur lors du chargement de la liste", "error");
