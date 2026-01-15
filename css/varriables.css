@@ -2,7 +2,7 @@
     --whitespace: 3vw;
     --black : #000000;
     --white : #ffffff;
-    --corner-radius : 3px;
+    --corner-radius : 3px 
 }
 
 @media screen and (width >=600px) {
