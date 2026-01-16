@@ -10,7 +10,7 @@ section#hero {
         z-index: 3;
         height: 100vh;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         display: flex;
     }
 
@@ -20,6 +20,12 @@ section#hero {
         min-height: 100%;
         object-fit: cover;
         z-index: 1;
+    }
+
+    #year {
+        grid-area: bottom-right;
+        text-align: right;
+        align-self: flex-end;
     }
 
     &::after {
@@ -39,7 +45,6 @@ section#introduction {
 
     p {
         display: block;
-        max-width: 50vw;
         font-size: 1.5rem;
     }
 }
@@ -109,6 +114,9 @@ section#club {
 }
 
 section#key-numbers {
+
+    margin-bottom: 3rem ;
+
     div {
         display: grid;
         grid-template-columns: 1fr;
@@ -119,7 +127,7 @@ section#key-numbers {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            max-width: 250px;
+            max-width: 200px;
             padding: 2rem;
             aspect-ratio: 1;
 
@@ -129,6 +137,10 @@ section#key-numbers {
 
             h3 {
                 font-size: 2rem;
+            }
+
+            .key-numbers-big-title {
+                font-size: 2.5rem;
             }
 
             p {
@@ -171,8 +183,6 @@ section#download {
     }
 }
 
-
-
 footer {
     display: flex;
 
@@ -182,7 +192,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex-grow: 1;
+        width: 50%;
 
         img {
             width: 64px;
@@ -196,7 +206,6 @@ footer {
     address {
         font-style: unset;
         padding-left: var(--whitespace);
-        flex-grow: 2;
 
         p {
             font-size: 1.25rem;
@@ -206,30 +215,10 @@ footer {
 }
 
 @media screen and (width >=600px) {
-    section#hero {
-        .hero-content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas:
-                "state state ."
-                "bottom-left . bottom-right"
-            ;
 
-            #state {
-                grid-area: state;
-            }
-
-            #made-by {
-                grid-area: bottom-left;
-                align-self: flex-end;
-            }
-
-            #year {
-                grid-area: bottom-right;
-                text-align: right;
-                align-self: flex-end;
-            }
+    .hero-content {
+        h1 {
+            max-width: 80%;
         }
     }
 
@@ -241,5 +230,9 @@ footer {
                 max-width: 300px;
             }
         }
+    }
+
+    section#introduction p {
+        max-width: 60vw;
     }
 }
