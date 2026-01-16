@@ -17,16 +17,12 @@ img {
     width: 250px;
 }
 
-.uppercase {
-    text-transform: uppercase;
+a {
+    color: var(--black);
 }
 
-.big-text {
-    font-size: clamp(16px, 8vw, 96px);
-    font-weight: bold;
-}
-
-section, footer {
+section,
+footer {
     margin: var(--whitespace);
 }
 
@@ -65,6 +61,15 @@ section#key-numbers {
     background-color: #7a7a7a;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.big-text {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 .centred {
     margin: 0 auto;
 }
@@ -91,6 +96,10 @@ input {
     background-color: var(--success-color);
 }
 
-a {
-    color: var(--black);
+@media screen and (width >=600px) {
+
+    .big-text {
+        font-size: 5.5rem;
+    }
+
 }
