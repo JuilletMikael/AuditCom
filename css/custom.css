@@ -201,6 +201,40 @@ section#download {
     }
 }
 
+
+
+footer {
+    display: flex;
+
+    div {
+        border-right: 1px solid black;
+        padding-right: var(--whitespace);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        img {
+            width: 64px;
+        }
+
+        p:last-child {
+            text-align: end;
+        }
+    }
+
+    address {
+        font-style: unset;
+        padding-left: var(--whitespace);
+        flex-grow: 2;
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
 @media screen and (width >=600px) {
     section#hero {
         .hero-content {
